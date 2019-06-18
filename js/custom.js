@@ -60,7 +60,7 @@ jQuery(document).ready(function($) {
 $(document).ready(function() {
   /* Hide mobile menu after clicking on a link
   -----------------------------------------------*/
-  $('.navbar-collapse a').click(function(){
+  $('.navbar-collapse a').click(function() {
     $(".navbar-collapse").collapse('hide');
   });
 
@@ -87,7 +87,7 @@ $(document).ready(function() {
         "images/albion4.jpg", 
         "images/albion5.jpg", 
         "images/albion6.jpg",
-      ], {duration: 3000, fade: 750});
+      ], {duration: 4000, fade: 750});
     });
   })
 
