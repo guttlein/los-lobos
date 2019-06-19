@@ -87,6 +87,9 @@ $(document).ready(function() {
         "images/albion4.jpg", 
         "images/albion5.jpg", 
         "images/albion6.jpg",
+        "images/albion7.jpg",
+        "images/albion8.jpg",
+        "images/albion9.jpg",
       ], {duration: 4000, fade: 750});
     });
   })
