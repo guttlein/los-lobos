@@ -99,6 +99,7 @@ a:focus {
 /* All Section styles */
 #about,
 #feature,
+#rules,
 #video,
 #menu,
 #team,
@@ -110,6 +111,7 @@ a:focus {
 }
 
 #feature,
+#rules,
 #video,
 #team,
 #gallery,
@@ -118,6 +120,7 @@ a:focus {
 }
 
 #feature,
+#rules,
 #team {
   background: rgb(240, 240, 240);
 }
@@ -314,6 +317,85 @@ a:focus {
 #feature h3 {
   padding-top: 14px;
   padding-bottom: 10px;
+}
+
+/* Rules section */
+ol {
+  counter-reset: li;
+  list-style: none;
+  font: 15px 'trebuchet MS', 'lucida sans';
+  padding: 0;
+  margin-bottom: 4em;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+ol {
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 40px;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.rectangle-list a {
+  position: relative;
+  display: block;
+  padding: .4em .4em .4em .8em;
+  margin: .5em 0 .5em 2.5em;
+  background: #ffffff;
+  color: #444;
+  text-decoration: none;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -ms-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.rectangle-list a:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: -2.5em;
+  top: 50%;
+  margin-top: -1em;
+  background: #c21500;
+  color: #fff;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.rectangle-list a:after {
+  position: absolute;
+  content: '';
+  border: .5em solid transparent;
+  left: -1em;
+  top: 50%;
+  margin-top: -.5em;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -ms-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.rectangle-list a:hover {
+  background: #eee;
+  cursor: pointer;
+}
+
+.rectangle-list a:hover:after {
+  left: -.5em;
+  border-left-color: #c21500;
 }
 
 /* About section  */
@@ -616,7 +698,7 @@ a:focus {
 #contact input[type="submit"] {
   background: #ffffff;
   border-radius: 4px;
-  color: #000000;
+  color: #c21500;
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 2px;
