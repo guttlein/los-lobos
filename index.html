@@ -87,14 +87,14 @@
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                <div class="feature-thumb">
                   <div class="feature-icon">
-                     <span><i class="fas fa-money-bill-wave h-100"></i></span>
+                     <span><i class="fas fa-money-bill-wave"></i></span>
                   </div>
                   <h3>DINEROS</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet
                      phasellus.</p>
                </div>
             </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp h-100" data-wow-delay="0.6s">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
                <div class="feature-thumb">
                   <div class="feature-icon">
                      <span><i class="fas fa-money-bill-wave"></i></span>
@@ -104,7 +104,7 @@
                      phasellus.</p>
                </div>
             </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp h-100" data-wow-delay="0.9s">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
                <div class="feature-thumb">
                   <div class="feature-icon">
                      <span><i class="fas fa-money-bill-wave"></i></span>
@@ -114,7 +114,7 @@
                      phasellus.</p>
                </div>
             </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp h-100" data-wow-delay="0.9s">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
                <div class="feature-thumb">
                   <div class="feature-icon">
                      <span><i class="fas fa-money-bill-wave"></i></span>
@@ -140,11 +140,11 @@
                </div>
                <div class="contact-form wow fadeInUp" data-wow-delay="0.7s">
                   <form id="contact-form" method="" action="">
-                     <input name="nickname" type="text" class="form-control" placeholder="¿Nickname?" required autocomplete="off">
-                     <input name="rol" type="text" class="form-control" placeholder="¿Rol?" required autocomplete="off">
-                     <input name="fame" type="text" class="form-control" placeholder="¿Fama total?" required autocomplete="off">
-                     <input name="why" type="text" class="form-control" placeholder="¿Por qué quieres unirte?" required autocomplete="off">
-                     <textarea name="comment" class="form-control" placeholder="Comentarios" rows="3" required autocomplete="off"></textarea>
+                     <input id="nickname_input" name="nickname" type="text" class="form-control" placeholder="¿Nickname?" required autocomplete="off">
+                     <input id="rol_input" name="rol" type="text" class="form-control" placeholder="¿Rol?" required autocomplete="off">
+                     <input id="fame_input" name="fame" type="text" class="form-control" placeholder="¿Fama total?" required autocomplete="off">
+                     <input id="why_input" name="why" type="text" class="form-control" placeholder="¿Por qué quieres unirte?" required autocomplete="off">
+                     <textarea id="comment_input" name="comment" class="form-control" placeholder="Comentarios" rows="3" autocomplete="off"></textarea>
                      <input type="submit" class="form-control submit" value="ENVIAR SOLICITUD">
                   </form>
                </div>
@@ -161,6 +161,7 @@
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
    <script src="js/jquery.magnific-popup.min.js"></script>
    <script src="js/jquery.sticky.js"></script>
    <script src="js/jquery.backstretch.min.js"></script>
@@ -171,6 +172,13 @@
    <script src="js/jquery.parallax.js"></script>
    <script src="js/smoothscroll.js"></script>
    <script src="js/wow.min.js"></script>
+   <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+   <script type="text/javascript">
+      (function(){
+         emailjs.init("user_si9o06NRqfs1MGt6LbbKI");
+      })();
+   </script>
+   <script src="js/email.js"></script>
    <script src="js/custom.js"></script>
 </body>
 
