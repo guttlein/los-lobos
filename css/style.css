@@ -264,9 +264,9 @@ a:focus {
   background-color: transparent;
 }
 
-.navbar > .container > .navbar-collapse > .navbar-nav > a.active,
-.navbar > .container > .navbar-collapse > .navbar-nav > a:hover,
-.navbar > .container > .navbar-collapse > .navbar-nav > a:focus {
+.navbar > .container > .navbar-collapse > .navbar-nav > li > .active,
+.navbar > .container > .navbar-collapse > .navbar-nav > li > .active:hover,
+.navbar > .container > .navbar-collapse > .navbar-nav > li > .active:focus {
   color: #c21500;
   background-color: transparent;
 }
